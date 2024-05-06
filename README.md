@@ -4,31 +4,33 @@
 ## AIM :Use of Network commands in Real Time environment
 ## Software : Command Prompt And Network Protocol Analyzer
 ## Procedure: To do this EXPERIMENT- follows these steps:
-<BR>
+
 In this EXPERIMENT- students have to understand basic networking commands e.g cpdump, netstat, ifconfig, nslookup ,traceroute and also Capture ping and traceroute PDUs using a network protocol analyzer 
-<BR>
+
 All commands related to Network configuration which includes how to switch to privilege mode
-<BR>
-and normal mode and how to configure router interface and how to save this configuration to
-<BR>
+
+and normal mode and how to configure router interface and how to save this configuration 
+
 flash memory or permanent memory.
-<BR>
+
 This commands includes
-<BR>
+
 • Configuring the Router commands
-<BR>
+
 • General Commands to configure network
-<BR>
+
 • Privileged Mode commands of a router 
-<BR>
+
 • Router Processes & Statistics
-<BR>
+
 • IP Commands
-<BR>
+
 • Other IP Commands e.g. show ip route etc.
-<BR>
+
 ## Program:
+
 ## Ping Command:
+
 ## Client:
 ```
 import socket
@@ -75,9 +77,12 @@ finally:
 ```
 ## Output
 ## Client:
+
 ![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/5aae724c-4c5d-43a2-b3cc-1f7765b89402)
 ## Server:
+
 ![Screenshot 2024-05-06 214344](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/c123376e-cb67-469c-b4c9-0acbb76325f4)
+
 ## TraceRoute Command:
 ```
 from scapy.all import* 
@@ -86,7 +91,10 @@ result, unans = traceroute(target,maxttl=32)
 print(result,unans)
 ```
 ## Output:
+
 ## TraceRoute Command:
+
 ![Screenshot 2024-05-06 220129](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/0c0098eb-6d8d-4be2-bd5f-8cbd21fb99a7)
+
 ## Result
 Thus Execution of Network commands Performed 
