@@ -49,6 +49,7 @@ while True:
         ```
 
 ## Server:
+
 ```
 import socket 
 s=socket.socket() 
@@ -57,7 +58,7 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
-    ```
+```
     
 ## TraceRoute Command:
 ```
