@@ -32,6 +32,7 @@ This commands includes
 ## Ping Command:
 
 ## Client:
+
 ```
 import socket
 from pythonping import ping
@@ -56,7 +57,9 @@ while True:
     finally:
         c.close()
         ```
+
 ## Server:
+
 ```
 import socket
 s=socket.socket()
@@ -75,10 +78,13 @@ except Exception as e:
 finally:
     s.close()
 ```
+
 ## Output
+
 ## Client:
 
 ![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/5aae724c-4c5d-43a2-b3cc-1f7765b89402)
+
 ## Server:
 
 ![Screenshot 2024-05-06 214344](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/c123376e-cb67-469c-b4c9-0acbb76325f4)
