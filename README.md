@@ -69,13 +69,15 @@ print(result,unans)
 ```
 ## Output:
 ## Client:
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/d785d4c8-c8cc-47d5-9f64-19ee14c8f8a2)
+
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ea6a31b1-f0b8-4c48-aa6b-140c172ee0cf)
 
 ## Server:
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/90612d9b-2c49-4723-a487-f7568c98f9a5)
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/55ed1b6b-0314-4b91-b728-dcb3be9bd31a)
+
 
 ## TraceRoute Command:
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ac9d475e-749c-4a56-b8b5-b2b93ba0976f)
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ec1e4aae-b066-4eb2-8de7-d67af1a6e5b2)
 
 
 ## Result
