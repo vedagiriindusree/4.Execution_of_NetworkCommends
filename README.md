@@ -49,7 +49,6 @@ while True:
         ```
 
 ## Server:
-
 ```
 import socket 
 s=socket.socket() 
