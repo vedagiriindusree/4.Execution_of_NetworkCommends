@@ -34,61 +34,32 @@ This commands includes
 ## Client:
 
 ```
-import socket
-from pythonping import ping
-s=socket.socket()
-s.bind(('localhost',8000))
-s.listen(5)
-while True:
-    c,addr=s.accept()
-    print("Connecting from ",addr)
-    try:
-        hostname=c.recv(1024).decode().strip()
-        if hostname:
-            try:
-                response=str(ping(hostname,verbose=True))
-                c.send(response.encode())
-            except Exception as e:
-                c.send("ping failed  {}".format(e).encode())
-        else:
-            c.send("Hostname not provided".encode())
-    except Exception as e:
-        print("Error: ",e)
-    finally:
-        c.close()
+import socket 
+from pythonping import ping 
+s=socket.socket() 
+s.bind(('localhost'8000)) 
+s.listen(5) 
+c,addr=s.accept() 
+while True: 
+    hostname=c.recv(1024).decode() 
+    try: 
+        c.send(str(ping(hostname, verbose=False)).encode()) 
+    except KeyError: 
+        c.send("Not Found".encode())
         ```
 
 ## Server:
 
 ```
-import socket
-s=socket.socket()
-s.connect(('localhost',8000))
-try:
-    while True:
-        ip= input("Enter Website u want to ping :")
-        s.send(ip.encode())
-        response=s.recv(1024).decode()
-        if response:
-            print ("Ping result :",response)
-        else:
-            print ("No response from server")
-except Exception as e:
-    print ("Error:", e)
-finally:
-    s.close()
-```
-
-## Output
-
-## Client:
-
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/5aae724c-4c5d-43a2-b3cc-1f7765b89402)
-
-## Server:
-
-![Screenshot 2024-05-06 214344](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/c123376e-cb67-469c-b4c9-0acbb76325f4)
-
+import socket 
+s=socket.socket() 
+s.connect(('localhost',8000)) 
+while True: 
+    ip=input("Enter the website you want to ping ") 
+    s.send(ip.encode()) 
+    print(s.recv(1024).decode())
+    ```
+    
 ## TraceRoute Command:
 ```
 from scapy.all import* 
@@ -97,10 +68,15 @@ result, unans = traceroute(target,maxttl=32)
 print(result,unans)
 ```
 ## Output:
+## Client:
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/d785d4c8-c8cc-47d5-9f64-19ee14c8f8a2)
+
+## Server:
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/90612d9b-2c49-4723-a487-f7568c98f9a5)
 
 ## TraceRoute Command:
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ac9d475e-749c-4a56-b8b5-b2b93ba0976f)
 
-![Screenshot 2024-05-06 220129](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/0c0098eb-6d8d-4be2-bd5f-8cbd21fb99a7)
 
 ## Result
 Thus Execution of Network commands Performed 
