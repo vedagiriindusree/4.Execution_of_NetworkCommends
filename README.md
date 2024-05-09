@@ -45,11 +45,9 @@ while True:
     try: 
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
-        c.send("Not Found".encode())
-        ```
-
+c.send("Not Found".encode())
+```
 ## Server:
-
 ```
 import socket 
 s=socket.socket() 
@@ -58,27 +56,26 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
-  ```
-    
+```
 ## TraceRoute Command:
 ```
 from scapy.all import* 
 target = ["www.google.com"] 
-result, unans = traceroute(target,maxttl=32)
+result, unans = traceroute(target,maxttl=32) 
 print(result,unans)
 ```
 ## Output:
+## Ping Command:
 ## Client:
 
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ea6a31b1-f0b8-4c48-aa6b-140c172ee0cf)
-
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/d1b600aa-03b5-472b-87d0-051ac81eaf8a)
 ## Server:
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/55ed1b6b-0314-4b91-b728-dcb3be9bd31a)
 
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/215790b0-ac3b-4e90-9556-bb6d31eb2821)
 
 ## TraceRoute Command:
-![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/ec1e4aae-b066-4eb2-8de7-d67af1a6e5b2)
 
+![image](https://github.com/vedagiriindusree/4.Execution_of_NetworkCommends/assets/149366776/b91ffc13-60ea-4e8b-8672-2ed82eb9e0a6)
 
-## Result
-Thus Execution of Network commands Performed. 
+## Result:
+Thus Execution of Network commands Performed.
